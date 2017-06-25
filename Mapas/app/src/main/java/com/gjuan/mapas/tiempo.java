@@ -13,9 +13,8 @@ public class tiempo {
         minu=c.get(Calendar.MINUTE);
         seg=c.get(Calendar.SECOND);
     }
-        public String verFecha(){
-            return String.format("%02d/%02d/%02d",dia,mes,anio);
-        }
+        
+        /*Borre esta linea*/
     public String verHora(){
         return  String.format("%02d/%02d/%02d",hora,minu,seg);
     }
