@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_empleado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gjuan.mapas.EmpleadoActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/Nombre"
+        android:hint="Escriba su Nombre"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Apellido"
+        android:hint="Escriba su Apellido"
+        android:layout_below="@+id/Nombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sueldo"
+        android:hint="Escriba su Sueldo"
+        android:layout_below="@+id/Apellido"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Suel_hora"
+        android:hint="Escriba su Sueldo por hora"
+        android:layout_below="@+id/Sueldo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+    <Spinner
+        android:id="@+id/horaex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Suel_hora"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+
+        ></Spinner>
+    <LinearLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="280dp">
+    <Button
+        android:text="Calcular"
+        android:id="@+id/calcula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horaex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+
+        />
+
+
+    <Button
+        android:text="Volver"
+        android:id="@+id/v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mostrar"
+        android:layout_toRightOf="@+id/calcula"
+        android:layout_toEndOf="@+id/calcula"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mostrar"
+        android:layout_below="@+id/contenedor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"/>
+</RelativeLayout>

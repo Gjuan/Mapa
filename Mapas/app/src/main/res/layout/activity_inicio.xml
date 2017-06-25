@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/lista"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list"
+                        ></ListView>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/toast"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contacto"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        ></TextView>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtNombres"
+                        android:hint="Nombre"
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtTelefono"
+                        android:hint="Teléfono"
+                        ></EditText>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtCiudad"
+                        android:hint="Ciudad"
+                        ></EditText>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Presionar"
+                        android:id="@+id/btnPresionar"
+                        ></Button>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/notificar"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Mensaje"
+                        android:id="@+id/msg"
+                        />
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Enviar"
+                        android:onClick="envio"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/enviar" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

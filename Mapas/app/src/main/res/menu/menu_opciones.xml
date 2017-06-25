@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Empleado"
+        android:id="@+id/empleado"
+        android:orderInCategory="100" />
+
+    <item android:title="Estudiante"
+        android:id="@+id/estudiante"
+        android:orderInCategory="100" />
+
+
+    <item android:title=""
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/camara"
+        android:id="@+id/camara" />
+
+    <item android:title=""
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/mapa"
+        android:id="@+id/mapa" />
+</menu>
